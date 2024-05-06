@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade crafts and Artisanal products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Handmade crafts and Artisanal products</h1>
+    <button id="connectWallet">Connect Wallet</button>
+
+    <h2>List an Item</h2>
+    <form id="listItemForm">
+        <input type="text" id="title" placeholder="Item Title" required>
+        <input type="text" id="description" placeholder="Item Description" required>
+        <input type="number" id="price" placeholder="Item Price (ETH)" required>
+
+        <button type="submit">List Item</button>
+    </form>
+
+    <h2>Items for Sale</h2>
+    <ul id="itemsList"></ul>
+
+    <!-- Toast notification -->
+    <div id="toast" class="hidden"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
